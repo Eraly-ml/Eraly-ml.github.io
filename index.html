@@ -13,10 +13,15 @@
             margin: auto;
             padding: 20px;
         }
-        a { color: #1E90FF; text-decoration: none; }
+        a { 
+            color: #1E90FF; 
+            text-decoration: none; 
+        }
         .profile-img {
-            width: 150px;
-            border-radius: 50%;
+            width: 150px; /* Ширина фиксированная */
+            height: 200px; /* Высота для соотношения 3:4 */
+            object-fit: cover; /* Обрезает, если размеры не совпадают */
+            border-radius: 0; /* Убираем скругление */
         }
     </style>
 </head>
@@ -26,7 +31,11 @@
         <h1>Eraly</h1>
         <p>ML/DL Developer | Computer Vision & NLP Enthusiast</p>
         <p>Student at Smart Bilim Aktobe</p>
-        <p><a href="http://t.me/eralyf">Telegram</a> | <a href="https://github.com/Eraly-ml">GitHub</a> | <a href="https://huggingface.co/Eraly-ml">Hugging Face</a></p>
+        <p>
+            <a href="http://t.me/eralyf">Telegram</a> | 
+            <a href="https://github.com/Eraly-ml">GitHub</a> | 
+            <a href="https://huggingface.co/Eraly-ml">Hugging Face</a>
+        </p>
     </header>
     <section>
         <h2>About Me</h2>
