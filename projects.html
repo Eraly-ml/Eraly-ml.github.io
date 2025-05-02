@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eraly Gainulla - Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eraly Gainulla - Projects & Publications</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -14,7 +14,6 @@
       --card-background: #fff;
       --shadow-color: rgba(0, 0, 0, 0.1);
     }
-    
     body {
       font-family: 'Roboto', sans-serif;
       background-color: var(--background-color);
@@ -23,25 +22,21 @@
       padding: 20px;
       line-height: 1.6;
     }
-    
     .container {
       max-width: 800px;
       margin: 0 auto;
     }
-    
     h1 {
       color: var(--primary-color);
       text-align: center;
       margin-bottom: 30px;
     }
-    
     h2 {
       color: var(--primary-color);
       border-bottom: 2px solid var(--accent-color);
       padding-bottom: 5px;
       margin-bottom: 15px;
     }
-    
     .year-section {
       margin-bottom: 30px;
       padding: 20px;
@@ -49,17 +44,14 @@
       border-radius: 8px;
       box-shadow: 0 2px 8px var(--shadow-color);
     }
-    
     .project {
       margin-bottom: 15px;
     }
-    
     .project a {
       color: var(--accent-color);
       text-decoration: none;
       transition: text-decoration 0.3s ease;
     }
-    
     .project a:hover {
       text-decoration: underline;
     }
@@ -67,8 +59,9 @@
 </head>
 <body>
   <div class="container">
-    <h1>Eraly Gainulla - Projects</h1>
+    <h1>Eraly Gainulla</h1>
     
+    <!-- Projects by year -->
     <div class="year-section">
       <h2>2025</h2>
       <div class="project">
@@ -80,19 +73,19 @@
         [<a href="https://huggingface.co/spaces/Eraly-ml/Skin-AI" target="_blank">repo</a>]
       </div>
       <div class="project">
-        <strong>YOLOv5 for Smoke Detection</strong> – Real-time object detection implementation with Telegram API bot.
+        <strong>YOLOv5 for Smoke Detection</strong> – Real-time object detection with Telegram API bot.  
         [<a href="https://github.com/Arka04bro/Smoke_Detection-" target="_blank">repo</a>]
       </div>
       <div class="project">
-        <strong>Against Toxic Telegram</strong> – Using BERT-based model to detect toxicity.  
+        <strong>Against Toxic Telegram</strong> – BERT-based toxicity detector.  
         [<a href="https://github.com/Eraly-ml/against-toxic-telegram" target="_blank">repo</a>]
       </div>
       <div class="project">
-        <strong>AI Telegram Doctor Detect</strong> – AI-driven Telegram bot for medical diagnostics.  
+        <strong>AI Telegram Doctor Detect</strong> – Medical‑diagnostics Telegram bot.  
         [<a href="https://github.com/Eraly-ml/AI-tg-doctor-detect" target="_blank">repo</a>]
       </div>
       <div class="project">
-        <strong>ResNet-50 on Central Asian Food Dataset</strong> – Central Asia Food classification model ResNet-50.  
+        <strong>ResNet-50 on Central Asian Food Dataset</strong> – Food classification model.  
         [<a href="https://github.com/Eraly-ml/centraasia-ResNet-50" target="_blank">repo</a>]
       </div>
     </div>
@@ -104,6 +97,17 @@
         [<a href="https://github.com/Eraly-ml/eco_AI" target="_blank">repo</a>]
       </div>
     </div>
+    
+    <!-- Новая секция Publications -->
+    <div class="year-section">
+      <h2>Publications</h2>
+      <div class="project">
+        <strong>KazBERT: A Custom BERT Model for the Kazakh Language</strong> – full paper, описаны сбор корпуса, архитектура и метрики сравнения с mBERT.  
+        [<a href="publications/KazBERT.pdf" target="_blank">Download PDF</a>]
+      </div>
+      <!-- сюда потом можно добавить новые статьи -->
+    </div>
+    
   </div>
 </body>
 </html>
