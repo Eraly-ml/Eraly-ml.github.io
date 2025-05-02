@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html401">
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -16,15 +16,43 @@
         --shadow: rgba(0, 0, 0, 0.05);
         --font-body: "Georgia", "Times New Roman", serif;
       }
-      body {
-        margin: 0;
-        padding: 2em;
-        max-width: none;
-        width: 100%;
+
+      * {
+        box-sizing: border-box;
       }
 
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: var(--font-body);
+        background: #f9f9f9;
+        color: var(--primary-color);
+      }
 
-      h1, h2 {
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2em 1em;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        margin-bottom: 2em;
+      }
+
+      header img {
+        height: 50px;
+      }
+
+      h1 {
+        font-size: 2em;
+        color: var(--accent-color);
+        margin: 0;
+      }
+
+      h2 {
         text-align: left;
         color: var(--accent-color);
         border-bottom: 2px solid var(--accent-color);
@@ -66,33 +94,53 @@
         color: #666;
         margin-top: 4em;
       }
+
+      @media (max-width: 600px) {
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        header img {
+          height: 40px;
+        }
+
+        h1 {
+          font-size: 1.5em;
+        }
+      }
     </style>
   </head>
 
   <body>
-    <h1>Projects & Publications</h1>
+    <div class="container">
+      <header>
+        <img src="logo.png" alt="Site Logo" />
+        <h1>Projects & Publications</h1>
+      </header>
 
-    <h2>Projects</h2>
-    <div class="year-section">
-      <h3>2025</h3>
-      <div class="item"><strong>KazBERT</strong> – A Custom BERT Model for the Kazakh Language. [<a href="https://huggingface.co/Eraly-ml/KazBERT" target="_blank">repo</a>]</div>
-      <div class="item"><strong>Skin-AI</strong> – AI model for dermatology. [<a href="https://huggingface.co/Eraly-ml/Skin-AI" target="_blank">repo</a>]</div>
-      <div class="item"><strong>YOLOv5 for Smoke Detection</strong> – Real-time object detection with Telegram API bot. [<a href="https://github.com/Arka04bro/Smoke_Detection-" target="_blank">repo</a>]</div>
-      <div class="item"><strong>Against Toxic Telegram</strong> – BERT-based chatbot for toxic message classification. [<a href="https://github.com/Eraly-ml/against-toxic-telegram" target="_blank">repo</a>]</div>
-      <div class="item"><strong>AI Telegram Doctor Detect</strong> – AI-driven Telegram bot for medical diagnostics. [<a href="https://github.com/Eraly-ml/AI-tg-doctor-detect" target="_blank">repo</a>]</div>
-      <div class="item"><strong>ResNet-50 on Central Asian Food Dataset</strong> – Food classification model. [<a href="https://github.com/Eraly-ml/centraasia-ResNet-50" target="_blank">repo</a>]</div>
+      <h2>Projects</h2>
+      <div class="year-section">
+        <h3>2025</h3>
+        <div class="item"><strong>KazBERT</strong> – A Custom BERT Model for the Kazakh Language. [<a href="https://huggingface.co/Eraly-ml/KazBERT" target="_blank">repo</a>]</div>
+        <div class="item"><strong>Skin-AI</strong> – AI model for dermatology. [<a href="https://huggingface.co/Eraly-ml/Skin-AI" target="_blank">repo</a>]</div>
+        <div class="item"><strong>YOLOv5 for Smoke Detection</strong> – Real-time object detection with Telegram API bot. [<a href="https://github.com/Arka04bro/Smoke_Detection-" target="_blank">repo</a>]</div>
+        <div class="item"><strong>Against Toxic Telegram</strong> – BERT-based chatbot for toxic message classification. [<a href="https://github.com/Eraly-ml/against-toxic-telegram" target="_blank">repo</a>]</div>
+        <div class="item"><strong>AI Telegram Doctor Detect</strong> – AI-driven Telegram bot for medical diagnostics. [<a href="https://github.com/Eraly-ml/AI-tg-doctor-detect" target="_blank">repo</a>]</div>
+        <div class="item"><strong>ResNet-50 on Central Asian Food Dataset</strong> – Food classification model. [<a href="https://github.com/Eraly-ml/centraasia-ResNet-50" target="_blank">repo</a>]</div>
+      </div>
+
+      <div class="year-section">
+        <h3>2024</h3>
+        <div class="item"><strong>EcoHero AI</strong> – Telegram bot EcoHero_AI. [<a href="https://github.com/Eraly-ml/eco_AI" target="_blank">repo</a>]</div>
+      </div>
+
+      <h2>Publications</h2>
+      <div class="year-section">
+        <div class="item"><strong>KazBERT: A Custom BERT Model for the Kazakh Language</strong> – Full paper with corpus details, architecture & metrics. [<a href="publications/KazBERT.pdf" target="_blank">Download PDF</a>]</div>
+      </div>
+
+        Last modified: Mar 24, 2025
     </div>
-
-    <div class="year-section">
-      <h3>2024</h3>
-      <div class="item"><strong>EcoHero AI</strong> – Telegram bot EcoHero_AI. [<a href="https://github.com/Eraly-ml/eco_AI" target="_blank">repo</a>]</div>
-    </div>
-
-    <h2>Publications</h2>
-    <div class="year-section">
-      <div class="item"><strong>KazBERT: A Custom BERT Model for the Kazakh Language</strong> – Full paper with corpus details, architecture & metrics. [<a href="publications/KazBERT.pdf" target="_blank">Download PDF</a>]</div>
-    </div>
-
-    Last modified: Mar 24, 2025
   </body>
 </html>
