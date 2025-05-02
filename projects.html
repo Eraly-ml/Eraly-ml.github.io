@@ -1,103 +1,100 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html401">
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="UTF-8" />
     <title>Projects & Publications</title>
-    <link rel="stylesheet" type="text/css" href="./files/html-style.css">
-    <meta name="author" content="ML Engineer">
-    <meta name="copyright" content="© 2025">
-    <meta http-equiv="Content-language" content="en">
-    <meta name="description" content="ML Projects and Publications">
-    <meta name="robots" content="all">
+    <meta name="author" content="ML Engineer" />
+    <meta name="description" content="ML Projects and Publications" />
+    <meta name="robots" content="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
       :root {
-        --primary-color: #003366;
-        --accent-color: #0066cc;
+        --primary-color: #1a1a1a;
+        --accent-color: #004080;
         --bg-section: #fff;
-        --shadow: rgba(0,0,0,0.1);
+        --shadow: rgba(0, 0, 0, 0.05);
+        --font-body: "Georgia", "Times New Roman", serif;
       }
+
+      body {
+        margin: 3em auto;
+        padding: 0 2em;
+        max-width: 800px;
+        font-family: var(--font-body);
+        background: #f9f9f9;
+        color: var(--primary-color);
+      }
+
+      h1, h2 {
+        text-align: left;
+        color: var(--accent-color);
+        border-bottom: 2px solid var(--accent-color);
+        padding-bottom: 4px;
+        margin-top: 2em;
+      }
+
       .year-section {
         background: var(--bg-section);
-        border-radius: 8px;
-        box-shadow: 0 2px 8px var(--shadow);
-        margin-bottom: 30px;
-        padding: 20px;
+        border-left: 4px solid var(--accent-color);
+        padding: 1em 1.5em;
+        margin-bottom: 2em;
+        box-shadow: 0 1px 6px var(--shadow);
       }
+
       .year-section h3 {
-        margin: 0 0 10px;
-        color: var(--primary-color);
-        border-bottom: 2px solid var(--accent-color);
-        padding-bottom: 5px;
-      }
-      .year-section .item {
-        margin: 10px 0;
-      }
-      .year-section .item a {
+        margin-top: 0;
+        font-size: 1.2em;
         color: var(--accent-color);
+      }
+
+      .item {
+        margin: 0.5em 0;
+        line-height: 1.6;
+      }
+
+      .item a {
+        color: #0055aa;
         text-decoration: none;
       }
-      .year-section .item a:hover {
+
+      .item a:hover {
         text-decoration: underline;
+      }
+
+      footer {
+        font-size: 0.85em;
+        text-align: right;
+        color: #666;
+        margin-top: 4em;
       }
     </style>
   </head>
-  
-  <body style="margin-top:1cm; margin-left:3cm; margin-right:5cm;">
 
-    <h2>Projects &amp; Publications</h2>
-    
+  <body>
+    <h1>Projects & Publications</h1>
+
     <h2>Projects</h2>
-    <!-- Блок 2025 -->
     <div class="year-section">
       <h3>2025</h3>
-      <div class="item">
-        <strong>KazBERT</strong> – A Custom BERT Model for the Kazakh Language.
-        [<a href="https://huggingface.co/Eraly-ml/KazBERT" target="_blank">repo</a>]
-      </div>
-      <div class="item">
-        <strong>Skin-AI</strong> – AI model for dermatology.
-        [<a href="https://huggingface.co/Eraly-ml/Skin-AI" target="_blank">repo</a>]
-      </div>
-      <div class="item">
-        <strong>YOLOv5 for Smoke Detection</strong> – Real-time object detection with Telegram API bot.
-        [<a href="https://github.com/Arka04bro/Smoke_Detection-" target="_blank">repo</a>]
-      </div>
-      <div class="item">
-        <strong>Against Toxic Telegram</strong> – BERT-based chatbot for toxic message classification.
-        [<a href="https://github.com/Eraly-ml/against-toxic-telegram" target="_blank">repo</a>]
-      </div>
-      <div class="item">
-        <strong>AI Telegram Doctor Detect</strong> – AI-driven Telegram bot for medical diagnostics.
-        [<a href="https://github.com/Eraly-ml/AI-tg-doctor-detect" target="_blank">repo</a>]
-      </div>
-      <div class="item">
-        <strong>ResNet-50 on Central Asian Food Dataset</strong> – Food classification model.
-        [<a href="https://github.com/Eraly-ml/centraasia-ResNet-50" target="_blank">repo</a>]
-      </div>
+      <div class="item"><strong>KazBERT</strong> – A Custom BERT Model for the Kazakh Language. [<a href="https://huggingface.co/Eraly-ml/KazBERT" target="_blank">repo</a>]</div>
+      <div class="item"><strong>Skin-AI</strong> – AI model for dermatology. [<a href="https://huggingface.co/Eraly-ml/Skin-AI" target="_blank">repo</a>]</div>
+      <div class="item"><strong>YOLOv5 for Smoke Detection</strong> – Real-time object detection with Telegram API bot. [<a href="https://github.com/Arka04bro/Smoke_Detection-" target="_blank">repo</a>]</div>
+      <div class="item"><strong>Against Toxic Telegram</strong> – BERT-based chatbot for toxic message classification. [<a href="https://github.com/Eraly-ml/against-toxic-telegram" target="_blank">repo</a>]</div>
+      <div class="item"><strong>AI Telegram Doctor Detect</strong> – AI-driven Telegram bot for medical diagnostics. [<a href="https://github.com/Eraly-ml/AI-tg-doctor-detect" target="_blank">repo</a>]</div>
+      <div class="item"><strong>ResNet-50 on Central Asian Food Dataset</strong> – Food classification model. [<a href="https://github.com/Eraly-ml/centraasia-ResNet-50" target="_blank">repo</a>]</div>
     </div>
 
-    <!-- Блок 2024 -->
     <div class="year-section">
       <h3>2024</h3>
-      <div class="item">
-        <strong>EcoHero AI</strong> – Telegram bot EcoHero_AI.
-        [<a href="https://github.com/Eraly-ml/eco_AI" target="_blank">repo</a>]
-      </div>
+      <div class="item"><strong>EcoHero AI</strong> – Telegram bot EcoHero_AI. [<a href="https://github.com/Eraly-ml/eco_AI" target="_blank">repo</a>]</div>
     </div>
-    
-    
+
     <h2>Publications</h2>
-    <!-- Блок Publications -->
     <div class="year-section">
-      <div class="item">
-        <strong>KazBERT: A Custom BERT Model for the Kazakh Language</strong> – full paper with corpus details, architecture &amp; metrics.
-        [<a href="publications/KazBERT.pdf" target="_blank">Download PDF</a>]
-      </div>
+      <div class="item"><strong>KazBERT: A Custom BERT Model for the Kazakh Language</strong> – Full paper with corpus details, architecture & metrics. [<a href="publications/KazBERT.pdf" target="_blank">Download PDF</a>]</div>
     </div>
 
-    <!-- Footer -->
-    Last modified: Mar 24 2025
-
+    <footer>Last modified: Mar 24, 2025</footer>
   </body>
 </html>
