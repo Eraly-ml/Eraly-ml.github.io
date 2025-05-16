@@ -25,3 +25,7 @@ a:Active {
 	color: #ff0000;
 	background-color: transparent;
 }
+
+samp {
+	font-size: 1.2em;
+}
