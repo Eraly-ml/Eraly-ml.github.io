@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publications — Yeraly</title>
+    <link rel="stylesheet" href="./files/html-style.css?v=20250810a" />
+  </head>
+  <body>
+    <button id="themeToggle" class="chip theme-switch" aria-label="Toggle theme">Light</button>
+    <main class="container">
+      <section class="section">
+        <h2>Publications</h2>
+        <ul class="list">
+          <li>
+            <strong>KazBERT: A Custom BERT Model for the Kazakh Language</strong> — Full paper with corpus details, architecture & metrics. [<a href="publications/KazBERT.pdf" target="_blank" rel="noopener">Download PDF</a>]
+          </li>
+        </ul>
+      </section>
 
+      <footer class="footer">Last modified: Jul 22, 2025</footer>
+    </main>
+    <script>
+      (function(){
+        const storageKey = 'theme';
+        const btn = document.getElementById('themeToggle');
+        const setTheme = (name) => {
+          document.body.classList.toggle('theme-light', name === 'light');
+          if (btn) btn.textContent = name === 'light' ? 'Dark' : 'Light';
+          try { localStorage.setItem(storageKey, name); } catch(e){}
+        };
+        let preferred = 'dark';
+        try {
+          const saved = localStorage.getItem(storageKey);
+          if (saved === 'light' || saved === 'dark') preferred = saved;
+          else if (window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches) preferred = 'light';
+        } catch(e){}
+        setTheme(preferred);
+        if (btn) btn.addEventListener('click', () => setTheme(document.body.classList.contains('theme-light') ? 'dark' : 'light'));
+      })();
+    </script>
+  </body>
+</html>
