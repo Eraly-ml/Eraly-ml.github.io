@@ -26,30 +26,32 @@
     <meta name="twitter:title" content="Yeraly Gainulla — ML Portfolio">
     <meta name="twitter:description" content="Personal homepage of Yeraly Gainulla, ML engineer.">
     <meta name="twitter:image" content="https://eraly-ml.github.io/profile-pics/IMG1.png">
-    <style>
+  <style>
+    .avatar {
+      width: 215px;
+      height: 215px;
+      max-width: 40vw;
+      max-height: 40vw;
+      /* ИСПРАВЛЕНО: Устанавливает квадратную форму (нет округления) */
+      border-radius: 0; 
+      object-fit: cover;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      border: 2px solid #eee;
+      background: #fafafa;
+      display: block;
+    }
+    @media (max-width: 700px) {
       .avatar {
-        width: 215px;
-        height: 215px;
-        max-width: 40vw;
-        max-height: 40vw;
-        border-radius: 18px;
-        object-fit: cover;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-        border: 2px solid #eee;
-        background: #fafafa;
-        display: block;
+        width: 120px;
+        height: 120px;
+        max-width: 60vw;
+        max-height: 60vw;
+        /* ИСПРАВЛЕНО: Устанавливает квадратную форму на маленьких экранах */
+        border-radius: 0; 
+        margin: 0 auto 1em auto;
       }
-      @media (max-width: 700px) {
-        .avatar {
-          width: 120px;
-          height: 120px;
-          max-width: 60vw;
-          max-height: 60vw;
-          border-radius: 12px;
-          margin: 0 auto 1em auto;
-        }
-      }
-    </style>
+    }
+  </style>
   </head>
   
   <body style="margin-top:1cm; margin-left:3cm; margin-right:5cm;">
