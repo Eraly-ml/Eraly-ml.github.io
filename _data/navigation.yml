@@ -1,0 +1,10 @@
+# main links
+main:
+  - title: "Projects"
+    url: /portfolio/
+
+  - title: "Publications"
+    url: /publications/
+
+  - title: "CV"
+    url: /files/yeraly-cv.pdf

@@ -1,0 +1,20 @@
+job:
+  - title: Summer Research Intern
+    start_date: Jun 2025
+    end_date: Aug 2025
+    company: Nazarbayev University
+    note: "Research on Cross-kingdom virtual cells with Prof. Yingqiu Xie"
+  - title: IT Hub Resident
+    start_date: 2024
+    end_date: Present
+    company: Aktobe IT Hub
+  - title: Community Member
+    start_date: 2024
+    end_date: Present
+    company: DSML Kazakhstan
+
+education:
+  - title: High School Student
+    start_date: 2020
+    end_date: Present
+    company: Aqbobek Lyceum, Aktobe, Kazakhstan

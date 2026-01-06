@@ -1,0 +1,335 @@
+---
+permalink: /group.html
+excerpt: "Group"
+author_profile: true
+redirect_from: 
+  - /group/
+---
+
+<!-- Bootstrap CSS CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap-utilities.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+<!-- Custom CSS -->
+<style>
+
+  .card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+    background-color: white;
+    border: none;
+    border-radius: var(--bs-border-radius);
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    height: 500px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 15px var(--theme-color);
+  }
+
+  .card img {
+    transition: all 0.3s ease;
+  }
+
+  .card .main-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  .card img.alt-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .card:hover img.alt-photo {
+    opacity: 1;
+  }
+
+  .card:hover .social-icons-card { 
+    transform: translateY(-100%);
+  }
+
+  .social-icons-card {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    padding-left: 0.5em;
+    color: white;
+    transition: transform 0.3s ease;
+
+  }
+  
+  .social-icons-card a {
+    font-size: 1.2rem; /* Icon size */
+    color: inherit; /* Matches text color */
+    text-decoration: none;
+    transition: color 0s ease;
+  }
+  
+  .social-icons-card a:hover {
+    text-decoration: none;
+    color: #f2ebe9;
+  }
+
+  .phd-color {
+    transition: all 0.3 ease;
+    --theme-color: #D4AF37; /* Bright Gold Glow */
+  }
+  .msc-color {
+    transition: all 0.3 ease;
+    --theme-color: #6A0DAD; /* Bright Purple Glow */
+  }
+  .bsc-color {
+    --theme-color: #387f75; /* lavender */
+  }
+
+  .staff-color {
+    --theme-color: #8097a1; /* platinum */
+  }
+
+  .flex-grow-1 {
+    flex-grow: 1; /* Ensures this section takes up all remaining space */
+  }
+
+  .card-body {
+    border-top: 3px solid var(--theme-color);
+    z-index: 3; /* Ensure text stays on top */
+    padding: 8px;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .card-title {
+    margin-top: 0em;
+    font-size: clamp(0.55rem, 1vw, 0.75rem);
+    font-weight: bold;
+  }
+
+  .card-text {
+    font-size: clamp(0.5rem, 0.8vw, 0.65rem);
+    line-height: 1.2;
+    margin-bottom: 2px;
+  }
+
+  .card-subtext {
+    font-size: clamp(0.45rem, 0.8vw, 0.55rem);
+    line-height: 1.2;
+    margin-bottom: 2px;
+  }
+
+  /* Prevent Underline on Hover */
+  .card-title a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .card-title a:hover {
+    text-decoration: underline; /* Add underline or other styles */
+    color: var(--theme-color); /* Optional: change color */
+  }
+
+  .image-container {
+    width: 100%;
+    padding-top: 100%; /* Maintains square aspect ratio */
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Alumni List Styling */
+  .alumni-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  
+  .row {
+    transition: all 0.3 ease;
+  }
+
+  /* Alumni Photo */
+  .alumni-photo {
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px; /* Adjust margin to the right */
+    border: 1px solid #ddd;
+  }
+  
+  /* Alumni Text */
+  .alumni-text {
+    flex-grow: 1;
+    font-size: clamp(0.6rem, 1vw, 0.8rem);
+  }
+  
+  .alumni-name {
+    font-weight: bold;
+    font-size: clamp(0.65rem, 1.2vw, 85rem);
+    margin-bottom: 1px;
+  }
+  
+  .alumni-details {
+    color: #555;
+  }
+
+  .card .more-info {
+    opacity: 0;
+    display: none;
+    transition: all 0.3s ease;
+  }
+
+  .card:hover .more-info {
+    height:auto;
+    display: block;
+    opacity: 1;
+  }
+
+</style>
+<div class="row">
+  <div class="col-md-6">
+    <h2>Research Group</h2>
+
+    Our research lab (internally named Alham Group Ltd.) consists mainly from MBZUAI but also some students that I co-advertise from Indonesia.
+    <br>
+
+    We are interested in research that aligns with our interests.
+
+    Currently, our focus is on multilingualism, multiculturalism, low-resource and efficient NLP, as well as aspects of human-computer interaction, particularly those that correlate across multilingual and multicultural domains.
+
+  </div>
+  <div class="col-md-6">
+    <img src="images/team/full-team-2024.jpg" style="border-radius: 28px; padding: 20px">
+  </div>
+</div>
+<div class="container my-5">
+  
+  <!-- Graduate Students (PhD + MSc) -->
+  {% assign phd_students = site.data.student.students | where: "category", "PhD" %}
+  {% assign msc_students = site.data.student.students | where: "category", "MSc" %}
+  {% assign bsc_students = site.data.student.students | where: "category", "BSc" %}
+
+  {% assign students = phd_students | concat: msc_students %}
+  {% assign students = students | concat: bsc_students %}
+
+  
+  {% if students.size > 0 %}
+    <div class="mb-5">
+      <h3>Students</h3>
+      <div class="row row-cols-3 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 g-4">
+        {% for person in students %}
+          {% if person.exclude_from_team != true %}
+            {% if person.location == "MBZUAI" %}
+              {% include person_card.html person=person %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+
+  <!-- Staff Section -->
+  {% assign staff = site.data.student.students | where: "category", "Staff" %}
+  {% if staff.size > 0 %}
+    <div class="mb-5">
+      <h3>Staff</h3>
+      <div class="row row-cols-3 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 g-4">
+        {% for person in staff %}
+          {% if person.exclude_from_team != true %}
+            {% include person_card.html person=person %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+  
+  <!-- Alumni Section -->
+  {% assign alumni = site.data.student.students | where: "category", "Alumni" | where: "location", "MBZUAI" | sort: "graduation_end" %}
+  {% if alumni.size > 0 %}
+    <div class="mb-5">
+      <h3>MBZUAI Alumni</h3>
+      <div>
+        <ul>
+        {% for person in alumni %}
+          <li style="font-size: 0.8em;"> 
+            <a href="{{ person.url }}" target="_blank" class="text-decoration-none">
+            {{ person.name }}
+          </a> <span>&#8212;</span> {{ person.role }} ({{ person.starting_year }} - {{ person.finish_year }})
+          {% if person.current_position %}
+            <br>Current: {{ person.current_position }}
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endif %}
+
+    <!-- External Advisee -->
+  {% assign alumni = site.data.student.students | where: "category", "Alumni" | sort: "graduation_end" %}
+  {% assign external = site.data.student.students 
+     | where_exp: "item", "item.category != 'Alumni'" %}
+  
+  {% if external.size > 0 %}
+    <div class="mb-5">
+      <h3>External Advisee</h3>
+      <div>
+        <ul>
+        {% for person in external %}
+        {% if person.location != "MBZUAI" %}
+          <li style="font-size: 0.8em;"> 
+            <a href="{{ person.url }}" target="_blank" class="text-decoration-none">
+            {{ person.name }}
+          </a> <span>&#8212;</span> {{ person.role }} at {{ person.location }} ({{ person.starting_year }} - {{ person.finish_year }})
+          {% if person.current_position %}
+            <br>Current: {{ person.current_position }}
+          {% endif %}
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endif %}
+  {% if alumni.size > 0 %}
+    <div class="mb-5">
+      <h3>Past External Advisee</h3>
+      <div>
+        <ul>
+        {% for person in alumni %}
+        {% if person.location != "MBZUAI" %}
+          <li style="font-size: 0.8em;"> 
+            <a href="{{ person.url }}" target="_blank" class="text-decoration-none">
+            {{ person.name }}
+          </a> <span>&#8212;</span> {{ person.role }} at {{ person.location }} ({{ person.starting_year }} - {{ person.finish_year }})
+          {% if person.current_position %}
+            <br>Current: {{ person.current_position }}
+          {% endif %}
+        {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+<!-- Bootstrap JS + Icons -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
