@@ -15,3 +15,5 @@ Cross-kingdom virtual cells as an Artificial Intelligence-based architecture for
 
 ## Supervisor
 Yingqiu Xie, Associate Professor, SSH/Biology, Nazarbayev University
+[Download paper here](/files/aicells.pdf)
+
